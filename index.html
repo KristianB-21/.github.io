@@ -519,7 +519,7 @@
   <span style="opacity:.5">Views expressed are those of the author and do not represent the Federal Reserve Bank of New York or the Federal Reserve System.</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   function openLightbox(img, caption) {
     document.getElementById('lightbox-img').src = img.src;
     document.getElementById('lightbox-img').alt = img.alt;
@@ -541,4 +541,14 @@
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
     document.getElementById('page-' + name).classList.add('active');
-    document.getElementById('nav-' + name).classList
+    document.getElementById('nav-' + name).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+  function toggleAbstract(id, btn) {
+    const el = document.getElementById(id);
+    const expanded = el.classList.toggle('expanded');
+    btn.textContent = expanded ? 'Hide abstract ↑' : 'Read abstract ↓';
+  }
+</script>
+</body>
+</html>
