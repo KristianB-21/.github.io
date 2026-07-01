@@ -91,6 +91,7 @@
     .paper-links { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .8rem; }
     .paper-link { font-family: var(--mono); font-size: .62rem; letter-spacing: .09em; text-transform: uppercase; padding: .26rem .52rem; border: 1px solid var(--rule); color: var(--ink-mid); text-decoration: none; transition: border-color .2s, color .2s; border-radius: 1px; }
     .paper-link:hover { border-color: var(--accent); color: var(--accent); }
+    button.paper-link { background: none; cursor: pointer; appearance: none; -webkit-appearance: none; }
     .paper-award { font-family: var(--mono); font-size: .62rem; letter-spacing: .05em; color: #7a5a1a; background: #fdf3e3; border: 1px solid #e8c87e; padding: .2rem .5rem; border-radius: 2px; margin-top: .55rem; display: inline-block; }
     .paper-img-wrapper { position: sticky; top: 80px; }
     .paper-img-wrapper img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border: none; border-radius: 4px; box-shadow: 0 2px 12px rgba(0,0,0,0.10); display: block; transition: transform .3s ease, box-shadow .3s ease; }
@@ -207,7 +208,7 @@
           <div class="paper-venue">Revision Requested at the Review of Financial Studies (RFS)</div>
           <div class="paper-abstract" id="abs-wp1">We find that the flightiness of depositors displays pronounced fluctuations over time, reaching unprecedentedly high levels after the Covid-19 crisis. Elevated deposit flightiness coincides with low interest rate environments, expansions in central bank reserves and a disproportionate increase in corporate deposits. Our dynamic model rationalizes these trends based on heterogeneity in investors' convenience value, where those in the banking system value the convenience benefits of deposits more. Following deposit inflows from outside investors, e.g., due to QE's reserve expansions, the marginal depositor becomes more rate-sensitive and the risk of panic runs increases. Our findings imply that the risk of panic runs triggered by policy rate hikes is amplified when the Fed's balance sheet size is larger, highlighting a novel linkage between conventional and unconventional monetary policy.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-wp1', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4873784" target="_blank">Working Paper / SSRN</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4873784" target="_blank">Working Paper / SSRN</a><button class="paper-link" onclick="copyCitation('wp1', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="DepositFlowSens_alt.png" alt="Deposit Flow Sensitivity" onclick="openLightbox(this, 'We regress deposit flows on (instrumented) deposit rates. Large increase in sensitivity during QE. ')" title="Click to enlarge"></div></div>
       </li>
@@ -218,7 +219,7 @@
           <div class="paper-coauthors">with Adair Morse and Parinitha Sastry</div>
           <div class="paper-abstract" id="abs-wp2">Banks may play a more active role in corporate finance than previously documented. Banks with industry expertise steward firms to undertake value-creating opportunities in transition technologies or expansion (new to the firm) sectors. Bank financing can unlock neglected opportunities, especially when banks have specialization, and firms neglect opportunities because of short-termist discount rates. We set up an empirical two-way fixed effect identification approach, building off the dynamic comparables strategy in the spirit of Sun and Abraham (2021), to test these predictions empirically in U.S. administrative loan data covering over 70% of commercial lending. We find that firms are more likely to undertake transition and expansion loans with specialized banks. The effect is stronger for short-termist firms (Kodak moments) and robust to limiting the sample to firms with similar transition opportunities under the Inflation Reduction Act. Consistent with stewardship emerging as a consequence of bank specialization, banks offer lower interest rates for these projects.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-wp2', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://drive.google.com/file/d/1EG4Mtu8shYoplHlETdkzf8Gz9_Ra-xZJ/view" target="_blank">Working Paper</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://drive.google.com/file/d/1EG4Mtu8shYoplHlETdkzf8Gz9_Ra-xZJ/view" target="_blank">Working Paper</a><button class="paper-link" onclick="copyCitation('wp2', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="ProbOvercome.png" alt="ProbOvercome" onclick="openLightbox(this, 'The presence of financing by specialized lenders makes otherwise unfeasible projects feasible.')" title="Click to enlarge"></div></div>
       </li>
@@ -229,7 +230,7 @@
           <div class="paper-coauthors">with Cecilia Parlatore and Anthony Saunders</div>
           <div class="paper-abstract" id="abs-wp3">We examine how banks' depositor composition shapes lending behavior, using granular supervisory data on deposits, loans, and securities for the largest U.S. banks. Classifying banks by depositor specialization, we find persistent differences in funding that translate to differences in asset allocations. Retail-depositor oriented banks hold longer-maturity loans and conduct more real estate lending, while corporate- and NBFI-oriented banks, whose funding is more volatile, hold shorter loans and liquid securities. Loan-level analyses show that stable funding is associated with lower rates, longer maturities, and larger loans. Growth in deposits is allocated differently depending on the depositor specialization of the bank, something we explore using exogenous deposit growth during COVID.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-wp3', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr1175" target="_blank">NY Fed Staff Report</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr1175" target="_blank">NY Fed Staff Report</a><button class="paper-link" onclick="copyCitation('wp3', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="BankTypes.png" alt="Types" onclick="openLightbox(this, 'Banks are incredibly segmented by the type of depositor to whom they cater. This has implications for their lending.')" title="Click to enlarge"></div></div>
       </li>
@@ -243,7 +244,7 @@
           <div class="paper-coauthors">with João Santos</div>
           <div class="paper-abstract" id="abs-wp4">We document that the quasi-mandatory U.S. flood insurance program reduces mortgage lending along both the extensive and intensive margins. We measure flood insurance mandates using FEMA flood maps, focusing on the discreet updates to these maps that can be made exogenous to true underlying flood risk. Reductions in lending are most pronounced for low-income and low-FICO borrowers, implying that the effects are at least partially driven by the added financial burden of insurance. Our results are also stronger among non-local or more-distant banks, who have a diminished ability to monitor local borrower adherence to complicated insurance mandates. Overall, our findings speak to the unintended consequences of well-intentioned regulation, and to the importance of factoring in affordability and enforcement feasibility when introducing mandatory standards.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-wp4', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr1012" target="_blank">NY Fed Staff Report</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr1012" target="_blank">NY Fed Staff Report</a><button class="paper-link" onclick="copyCitation('wp4', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="FloodMapChanges.png" alt="Changes" onclick="openLightbox(this, 'Flood maps change over the years, often playing catchup to the true flood risk.')" title="Click to enlarge"></div></div>
       </li>
@@ -254,7 +255,7 @@
           <div class="paper-coauthors">with Evan Perry and João Santos</div>
           <div class="paper-abstract" id="abs-wp5">Using unique nationwide property-level mortgage, flood risk, and flood map data, we analyze whether lenders respond to flood risk not captured in FEMA flood maps. We find that lenders are less willing to originate mortgages and charge higher rates for lower LTV loans that face "un-mapped" flood risk. This effect is weaker for high income applicants, as well as non-banks and small local banks. However, we find evidence that non-banks and local banks are more likely to securitize/sell mortgages to borrowers prone to flood risk. Taken together, our results indicate that mortgage lenders are aware of flood risk outside FEMA's identified flood zones.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-wp5', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4818552" target="_blank">Working Paper / SSRN</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4818552" target="_blank">Working Paper / SSRN</a><button class="paper-link" onclick="copyCitation('wp5', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="MappedUnmapped.png" alt="unmapped" onclick="openLightbox(this, 'Some regions with flood risk are zoned as such...some are not.')" title="Click to enlarge"></div></div>
       </li>
@@ -268,7 +269,7 @@
           <div class="paper-coauthors">solo</div>
           <div class="paper-abstract" id="abs-wp6">We merge several historical data sets from Germany to show that influenza mortality in 1918–1920 is correlated with societal changes, as measured by municipal spending and city-level extremist voting, in the subsequent decade. First, influenza deaths are associated with lower per capita spending, especially on services consumed by the young. Second, influenza deaths are correlated with the share of votes received by extremist parties in 1932 and 1933. Our election results are robust to controlling for city spending, demographics, war-related population changes, city-level wages, and regional unemployment, and to instrumenting influenza mortality. We conjecture that our findings may be the consequence of long-term societal changes brought about by a pandemic.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-wp6', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr921.pdf" target="_blank">NY Fed Staff Report</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr921.pdf" target="_blank">NY Fed Staff Report</a><button class="paper-link" onclick="copyCitation('wp6', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="InfluenzaDeaths.png" alt="influenza" onclick="openLightbox(this, 'Voter shares for extreme parties by a regions exposure to the influenza pandemic.')" title="Click to enlarge"></div></div>
       </li>
@@ -290,6 +291,7 @@
           <div class="paper-links">
             <a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr922.html" target="_blank">Staff Report</a>
             <a class="paper-link" href="https://drive.google.com/file/d/12k7MzFqROb6SnJLAYV3_qciXxVeizzMS/view" target="_blank">Dealscan Guide</a>
+            <button class="paper-link" onclick="copyCitation('pub1', this)">Cite (BibTeX)</button>
           </div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="Sales.png" alt="sales" onclick="openLightbox(this, 'Arrangers often sell loans they arrange. Especially Term B.')" title="Click to enlarge"></div></div>
@@ -302,7 +304,7 @@
           <div class="paper-venue">Journal of Financial Economics (JFE)</div>
           <div class="paper-abstract" id="abs-pub2">We study specialized lending in a credit market competition model with private information. Two banks possess "general" signals regarding borrower quality. The specialized bank gains an additional advantage through further interactions with the borrower, accessing "specialized" signals. In equilibrium, both lenders use general signals to screen applications, and the specialized lender prices the loan based on its specialized signal conditional on making a loan. This private-information-based pricing delivers the empirical regularity that loans made by specialized lenders have lower rates and better ex-post performance. We show robustness of our equilibrium under a generalized information structure, endogenize the specialized lending through information acquisition, and discuss various economic implications.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub2', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.nber.org/system/files/working_papers/w32155/w32155.pdf" target="_blank">NBER Working Paper</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.nber.org/system/files/working_papers/w32155/w32155.pdf" target="_blank">NBER Working Paper</a><button class="paper-link" onclick="copyCitation('pub2', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="RatePerfDiff.png" alt="rpdiff" onclick="openLightbox(this, 'Specialized lenders offer better rates while loans perform better')" title="Click to enlarge"></div></div>
       </li>
@@ -314,7 +316,7 @@
           <div class="paper-venue">Journal of Finance (JF)</div>
           <div class="paper-abstract" id="abs-pub3">Using highly detailed data on the loan portfolios of large U.S. banks, we document that these banks "specialize" by concentrating their lending disproportionately into one industry. This specialization improves a bank's industry-specific knowledge and allows it to offer generous loan terms to borrowers, especially to firms with access to alternate sources of funding and during periods of greater nonbank lending. Superior industry-specific knowledge is further reflected in better loan and, ultimately, bank performance. Banks concentrate more on their primary industry in times of instability and relatively lower Tier 1 capital. Finally, specialization counteracts a well-documented trend in reduced lending by large banks to opaque small and medium-sized enterprises.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub3', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr967" target="_blank">Staff Report</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr967" target="_blank">Staff Report</a><button class="paper-link" onclick="copyCitation('pub3', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="SpecializationShare.png" alt="special" onclick="openLightbox(this, 'Lenders are highly concentrated into certain key industries. THese are different for each lender.')" title="Click to enlarge"></div></div>
       </li>
@@ -326,7 +328,7 @@
           <div class="paper-venue">Journal of Financial Intermediation (JFI)</div>
           <div class="paper-abstract" id="abs-pub4">Firms with debt overhang experience 2% slower asset growth during ordinary times and up to 3% slower growth during a crisis, compared to similar firms without debt overhang. These patterns extend to employment and capital expenditures. The effects during the great recession are more pronounced for firms with greater need for external funding, including those that had to refinance during the crisis and those with fewer unused credit lines. We account for debt-structure endogeneity by showing that overhang correlates with credit line cuts after the failure of a syndicated member bank. Early COVID-19 data suggests the increase in debt overhang could lead to up to 10% slower growth for firms in the most-affected industries.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub4', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3708502" target="_blank">Working Paper</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3708502" target="_blank">Working Paper</a><button class="paper-link" onclick="copyCitation('pub4', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="Overhang.png" alt="overhang" onclick="openLightbox(this, 'Firms with significant overhang saw a sharp contraction in growth when credit tightened. ')" title="Click to enlarge"></div></div>
       </li>
@@ -339,7 +341,7 @@
           <div class="paper-abstract" id="abs-pub5">We use the German Crisis of 1931 to study how depositors behave during a bank run in the absence of deposit insurance. Deposits decline by around 20 percent during the run, with equal outflows from both ex-post failing and surviving banks — regular depositors are unable to identify failing banks. In contrast, the interbank market precisely identifies which banks will fail: it collapses entirely for failing banks but continues to function for surviving banks. Since regular depositors appear uninformed, deposit insurance is unlikely to exacerbate moral hazard. Instead, interbank depositors are best positioned to provide market discipline via short-term funding. (Early version circulated as "Micro-evidence from a system-wide financial meltdown: The German Crisis of 1931.")</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub5', this)">Read abstract ↓</button>
           <div class="paper-award">🏆 2025 Michael J. Brennan Award — Best Paper in the RFS, 2024</div>
-          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3436140" target="_blank">Working Paper</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3436140" target="_blank">Working Paper</a><button class="paper-link" onclick="copyCitation('pub5', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="Bankrun.png" alt="bankrun" onclick="openLightbox(this, 'The dynamics of who runs in a run.')" title="Click to enlarge"></div></div>
       </li>
@@ -351,7 +353,7 @@
           <div class="paper-venue">Journal of Financial Economics (JFE)</div>
           <div class="paper-abstract" id="abs-pub6">I study the effects of an increase in local mortgage credit supply on house prices using a natural experiment from Switzerland. In 2008, retail customers migrate deposits from universal banks suffering overseas losses to narrowly-local mortgage banks. Using the distance between the two bank types as an instrument for deposit growth, I show that local mortgage banks increase mortgage lending, which correlates with subsequent house price growth. My results highlight that bank specialization plays an important role in the allocation of capital.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub6', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0304405X21003160" target="_blank">Working Paper</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0304405X21003160" target="_blank">Working Paper</a><button class="paper-link" onclick="copyCitation('pub6', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="DepositGrowth.png" alt="depgrowth" onclick="openLightbox(this, 'Local banks in close proximity to a UBS branch had pronounced exogenous deposit growth.')" title="Click to enlarge"></div></div>
       </li>
@@ -363,7 +365,7 @@
           <div class="paper-venue">Journal of Money, Credit, and Banking (JMCB)</div>
           <div class="paper-abstract" id="abs-pub7">We study the impact of borrowing constraints on home ownership and housing demand by comparing the tenure choice and housing quality of consumers who receive intra-family wealth transfers to those that do not. On average the receipt of a wealth transfer increases the propensity of consumers to transition from renters to home-owners by 6–8 percentage points (35% of the sample mean). Additional analyses suggest this effect is driven by the relaxation of borrowing constraints rather than wealth effects. By contrast, wealth transfers do not increase the likelihood that existing homeowners trade up to larger homes in better locations.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub7', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2839217" target="_blank">SSRN</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2839217" target="_blank">SSRN</a><button class="paper-link" onclick="copyCitation('pub7', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="WealthTransfer.png" alt="wealthtr" onclick="openLightbox(this, 'Wealth transfers are necessary to buy a home.')" title="Click to enlarge"></div></div>
       </li>
@@ -375,7 +377,7 @@
           <div class="paper-venue">European Economic Review (EER)</div>
           <div class="paper-abstract" id="abs-pub8">We investigate the importance of housing-based collateral for small and young — i.e. credit-constrained — firms across six European economies. We find that borrowing, investment, and employment are all more strongly correlated with house price growth in these small and young firms, compared with slightly larger or older firms. This effect is on average stronger in the boom years before the global financial crisis, and more pronounced in countries with more lengthy bankruptcy resolution procedures.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub8', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr868.html" target="_blank">Staff Report</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr868.html" target="_blank">Staff Report</a><button class="paper-link" onclick="copyCitation('pub8', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="Const.png" alt="const" onclick="openLightbox(this, 'Small firms are considerably more reliant on house-price-appreciation related borrowing, especially in Southern Europe. ')" title="Click to enlarge"></div></div>
       </li>
@@ -387,7 +389,7 @@
           <div class="paper-venue">European Financial Management (EFM)</div>
           <div class="paper-abstract" id="abs-pub9">This paper investigates the announcement effects of contingent convertible securities (CoCo bonds) issued by global banks between January 2009 and June 2014. Using 34 financial institutions and 87 CoCo bond issues, we examine abnormal stock price reactions and CDS spread changes around announcement dates. CoCo bond announcements correlate with positive abnormal stock returns and negative CDS spread changes, most pronounced for first-time issues. We explain the CDS changes by lower probability of costly bankruptcy and the abnormal returns by a signaling framework based on pecking order theory and the tax shield advantage over equity.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub9', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2701938" target="_blank">SSRN</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2701938" target="_blank">SSRN</a><button class="paper-link" onclick="copyCitation('pub9', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="CoCo.png" alt="CoCo" onclick="openLightbox(this, 'There are positive anouncement effects for banks issuing contingent convertible bonds.')" title="Click to enlarge"></div></div>
       </li>
@@ -402,7 +404,7 @@
           <div class="paper-venue">Economic Policy Review (EPR)</div>
           <div class="paper-abstract" id="abs-pub10">We review the academic literature on possible links between climate change and inequality in the United States. The impact of both physical and transition risks may be uneven across location, income, race, and age — driven by geography and adaptation capabilities. Measures to adapt to climate change and transition to lower emissions risk increasing inequality. While federal aid and insurance can mitigate the direct impact of physical risks, their structure may inadvertently sustain and entrench existing inequalities. We conclude by outlining directions for future research.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub10', this)">Read abstract ↓</button>
-          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr991.html" target="_blank">Staff Report</a></div>
+          <div class="paper-links"><a class="paper-link" href="https://www.newyorkfed.org/research/staff_reports/sr991.html" target="_blank">Staff Report</a><button class="paper-link" onclick="copyCitation('pub10', this)">Cite (BibTeX)</button></div>
         </div>
       </li>
 
@@ -413,6 +415,7 @@
           <div class="paper-venue">Journal of Money, Credit, and Banking (JMCB)</div>
           <div class="paper-abstract" id="abs-pub11">Not very. We find that FEMA disasters over the last quarter century had insignificant or small effects on U.S. banks' performance. This stability seems endogenous rather than a mere reflection of federal aid. Disasters increase loan demand, which offsets losses and actually boosts profits at larger banks. Local banks tend to avoid mortgage lending where floods are more common than official flood maps would predict, suggesting that local knowledge may also mitigate disaster impacts.</div>
           <button class="abstract-toggle" onclick="toggleAbstract('abs-pub11', this)">Read abstract ↓</button>
+          <div class="paper-links"><button class="paper-link" onclick="copyCitation('pub11', this)">Cite (BibTeX)</button></div>
         </div>
        <div class="paper-img-col"><div class="paper-img-wrapper"><img src="EffectDisaster.png" alt="EffectDis" onclick="openLightbox(this, 'No substantial effects from disasters...at least none that rise to the level of a financial stability risk.')" title="Click to enlarge"></div></div>
       </li>
@@ -547,6 +550,144 @@ I have previously taught Financial Institutions Management and guest lectured on
     const el = document.getElementById(id);
     const expanded = el.classList.toggle('expanded');
     btn.textContent = expanded ? 'Hide abstract ↑' : 'Read abstract ↓';
+  }
+
+  const CITATIONS = {
+    wp1: {
+      key: 'blickle_deposit_flightiness', type: 'unpublished',
+      author: 'Blickle, Kristian S. and Li, Jian and Lu, Xu and Ma, Yiming',
+      title: 'The Dynamics of Deposit Flightiness and its Impact on Financial Stability',
+      note: 'Working paper; revision requested at the Review of Financial Studies'
+    },
+    wp2: {
+      key: 'blickle_banks_stewards', type: 'unpublished',
+      author: 'Blickle, Kristian S. and Morse, Adair and Sastry, Parinitha',
+      title: 'Banks as Stewards',
+      note: 'Mimeo'
+    },
+    wp3: {
+      key: 'blickle_deposit_specialization', type: 'unpublished',
+      author: 'Blickle, Kristian S. and Parlatore, Cecilia and Saunders, Anthony',
+      title: 'Deposit Specialization and Lending Behavior',
+      note: 'Mimeo; Federal Reserve Bank of New York Staff Report No. 1175'
+    },
+    wp4: {
+      key: 'blickle_mandatory_flood_insurance', type: 'unpublished',
+      author: 'Blickle, Kristian S. and Santos, João',
+      title: 'Unintended Consequences of "Mandatory" Flood Insurance',
+      note: 'Mimeo; Federal Reserve Bank of New York Staff Report No. 1012'
+    },
+    wp5: {
+      key: 'blickle_flood_risk_lenders', type: 'unpublished',
+      author: 'Blickle, Kristian S. and Perry, Evan and Santos, João',
+      title: 'Do Mortgage Lenders Respond to Flood Risk?',
+      note: 'Mimeo'
+    },
+    wp6: {
+      key: 'blickle_pandemics_cities', type: 'unpublished',
+      author: 'Blickle, Kristian S.',
+      title: 'Pandemics Change Cities: Municipal Spending and Voter Extremism in Germany, 1918–1933',
+      note: 'Mimeo; Federal Reserve Bank of New York Staff Report No. 921'
+    },
+    pub1: {
+      key: 'fleckenstein_lead_arrangers', type: 'article',
+      author: 'Blickle, Kristian S. and Fleckenstein, Quirin and Hillenbrand, Sebastian and Saunders, Anthony',
+      title: 'Do Lead Arrangers Retain their Lead Share?',
+      journal: 'Journal of Finance',
+      note: 'Forthcoming'
+    },
+    pub2: {
+      key: 'blickle2025jfe_infopricing', type: 'article',
+      author: 'Blickle, Kristian S. and He, Zhiguo and Huang, Jing and Parlatore, Cecilia',
+      title: 'Information-Based Pricing in Specialized Lending',
+      journal: 'Journal of Financial Economics', year: '2025', volume: '172', pages: '104135',
+      doi: '10.1016/j.jfineco.2025.104135'
+    },
+    pub3: {
+      key: 'blickle2026jf_specialization', type: 'article',
+      author: 'Blickle, Kristian S. and Parlatore, Cecilia and Saunders, Anthony',
+      title: 'Specialization in Banking',
+      journal: 'Journal of Finance', year: '2026', volume: '81', number: '3', pages: '1531–1572',
+      doi: '10.1111/jofi.70032'
+    },
+    pub4: {
+      key: 'blickle2024jfi_debtoverhang', type: 'article',
+      author: 'Blickle, Kristian S. and Santos, João A. C.',
+      title: 'The Costs of Corporate Debt Overhang',
+      journal: 'Journal of Financial Intermediation', year: '2024', volume: '60', pages: '101118',
+      doi: '10.1016/j.jfi.2024.101118'
+    },
+    pub5: {
+      key: 'blickle2024rfs_bankfailures', type: 'article',
+      author: 'Blickle, Kristian S. and Brunnermeier, Markus and Luck, Stephan',
+      title: 'Who Can Tell Which Banks Will Fail?',
+      journal: 'Review of Financial Studies', year: '2024', volume: '37', number: '9', pages: '2685–2731',
+      doi: '10.1093/rfs/hhae020'
+    },
+    pub6: {
+      key: 'blickle2022jfe_localbanks', type: 'article',
+      author: 'Blickle, Kristian S.',
+      title: 'Local Banks, Credit Supply, and House Prices',
+      journal: 'Journal of Financial Economics', year: '2022', volume: '143', number: '2', pages: '876–896',
+      doi: '10.1016/j.jfineco.2021.07.003'
+    },
+    pub7: {
+      key: 'blickle2019jmcb_wealthtransfers', type: 'article',
+      author: 'Blickle, Kristian S. and Brown, Martin',
+      title: 'Borrowing Constraints, Home Ownership and Housing Choice: Evidence from Intra-Family Wealth Transfers',
+      journal: 'Journal of Money, Credit, and Banking', year: '2019', volume: '51', number: '2-3', pages: '539–580',
+      doi: '10.1111/jmcb.12566'
+    },
+    pub8: {
+      key: 'banerjee2021eer_financialfrictions', type: 'article',
+      author: 'Blickle, Kristian S. and Banerjee, Ryan',
+      title: 'Financial Frictions, Real Estate Collateral, and Small Firm Activity in Europe',
+      journal: 'European Economic Review', year: '2021', volume: '138', pages: '103823',
+      doi: '10.1016/j.euroecorev.2021.103823'
+    },
+    pub9: {
+      key: 'ammann2017efm_coco', type: 'article',
+      author: 'Blickle, Kristian S. and Ammann, Manuel and Ehmann, Christian',
+      title: 'Announcement Effects of Contingent Convertible Securities: Evidence from the Global Banking Industry',
+      journal: 'European Financial Management', year: '2017', volume: '23', number: '1', pages: '127–152',
+      doi: '10.1111/eufm.12092'
+    },
+    pub10: {
+      key: 'blickle2023epr_climateinequality', type: 'article',
+      author: 'Blickle, Kristian S. and Avtar, Ruchi and Chakrabarti, Rajashri and Janakiraman, Janavi and Pinkovskiy, Maxim L.',
+      title: 'Understanding the Linkages between Climate Change and Inequality in the United States',
+      journal: 'Economic Policy Review', year: '2023', volume: '29', number: '1', pages: '1–39'
+    },
+    pub11: {
+      key: 'blickle2026jmcb_weatherdisasters', type: 'article',
+      author: 'Blickle, Kristian S. and Hamerling, Sarah and Morgan, Donald',
+      title: 'How Bad Are Weather Disasters for Banks?',
+      journal: 'Journal of Money, Credit and Banking', year: '2026',
+      doi: '10.1111/jmcb.70036',
+      note: 'Early View; volume/issue/pages not yet assigned'
+    }
+  };
+
+  function buildBibtex(id) {
+    const e = CITATIONS[id];
+    if (!e) return '';
+    const order = ['author', 'title', 'journal', 'year', 'volume', 'number', 'pages', 'doi', 'note'];
+    const fields = order.filter(k => e[k]).map(k => `  ${k} = {${e[k]}}`);
+    return `@${e.type}{${e.key},\n${fields.join(',\n')}\n}`;
+  }
+
+  function copyCitation(id, btn) {
+    const bibtex = buildBibtex(id);
+    const orig = btn.textContent;
+    const flash = () => {
+      btn.textContent = 'Copied ✓';
+      setTimeout(() => { btn.textContent = orig; }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(bibtex).then(flash).catch(() => window.prompt('Copy BibTeX citation:', bibtex));
+    } else {
+      window.prompt('Copy BibTeX citation:', bibtex);
+    }
   }
 </script>
 </body>
